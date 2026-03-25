@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply min-h-screen antialiased text-zinc-100;
+  background: linear-gradient(
+    165deg,
+    #0f0f12 0%,
+    #1c1c22 35%,
+    #3f3f46 72%,
+    #d4d4d8 100%
+  );
+  background-attachment: fixed;
+}
